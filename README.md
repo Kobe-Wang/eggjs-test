@@ -29,5 +29,19 @@ $ npm stop
 - Use `npm test` to run unit test.
 - Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
 
+### npm test
+
+- `npm run test-local`
+- Remember to add `config/config.unittest.js` for unit test
+
+
+### How to use ndb to debug nodejs?
+
+```bash
+$ npm install --save-dev ndb
+$ ndb npm run dev
+$ egg started on http://127.0.0.1:7001
+```
+https://github.com/GoogleChromeLabs/ndb
 
 [egg]: https://eggjs.org
