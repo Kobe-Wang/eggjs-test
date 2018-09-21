@@ -42,6 +42,7 @@ $ npm install -g ndb # global install with npm:
 $ npm install --save-dev ndb
 $ ndb npm run dev
 $ egg started on http://127.0.0.1:7001
+$ curl http://127.0.0.1:7001/news # test ndb
 ```
 https://github.com/GoogleChromeLabs/ndb
 
