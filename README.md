@@ -37,7 +37,8 @@ $ npm stop
 
 ### How to use ndb to debug nodejs?
 
-```bash
+```bash 
+$ npm install -g ndb # global install with npm:
 $ npm install --save-dev ndb
 $ ndb npm run dev
 $ egg started on http://127.0.0.1:7001
