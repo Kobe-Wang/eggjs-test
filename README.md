@@ -1,7 +1,6 @@
 # node_test
 
 
-
 ## QuickStart
 
 <!-- add docs here for user -->
@@ -33,6 +32,7 @@ $ npm stop
 
 - `npm run test-local`
 - Remember to add `config/config.unittest.js` for unit test
+- Run one file command `npm run test-local <filename>`
 
 
 ### How to use ndb to debug nodejs?
@@ -45,5 +45,28 @@ $ egg started on http://127.0.0.1:7001
 $ curl http://127.0.0.1:7001/news # test ndb
 ```
 https://github.com/GoogleChromeLabs/ndb
+
+### How to interactive debug node js unit test?
+
+- Install mocah
+- Install inspect
+```bash
+$ npm install --global mocha
+$ npm install --save-dev mocha
+$ mocha --inspect-brk <filename>
+```
+- Open `chrome://inspect` from chrome
+- Add `debugger` statement in your unit test file
+https://glebbahmutov.com/blog/debugging-mocha-using-inspector/
+https://mochajs.org/#usage
+https://nodejs.org/en/docs/guides/debugging-getting-started/
+- (Option) Install the Chrome Extension NIM (Node Inspector Manager)
+
+### How to run all of unit test files by using mocha?
+
+```bash
+$ mocha --recursive # Recursively running all test files
+$ mocha --inspect-brk --recursive  # With interactive breakpoints
+```
 
 [egg]: https://eggjs.org
