@@ -15,6 +15,7 @@
     "egg-mock": "^3.20.1",
     "eslint": "^4.11.0",
     "eslint-config-egg": "^6.0.0",
+    "mocha": "^5.2.0",
     "ndb": "^1.0.25",
     "webstorm-disable-index": "^1.2.0"
   },
