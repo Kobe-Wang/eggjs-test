@@ -33,6 +33,7 @@ $ npm stop
 - `npm run test-local`
 - Remember to add `config/config.unittest.js` for unit test
 - Run one file command `npm run test-local <filename>`
+- Run one file command with debug by npm test `npm run test-local -- test/app/middleware/robot.test.js --inspect-brk`
 
 
 ### How to use ndb to debug nodejs?
