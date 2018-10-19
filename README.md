@@ -70,4 +70,16 @@ $ mocha --recursive # Recursively running all test files
 $ mocha --inspect-brk --recursive  # With interactive breakpoints
 ```
 
+### How to build docker?
+
+```bash
+$ docker build -t <name>:<tag> .
+```
+
+### How to use image to run as container?
+
+```bash
+$ docker run -d -p 8000:8000 <name>:<tag>
+```
+
 [egg]: https://eggjs.org
